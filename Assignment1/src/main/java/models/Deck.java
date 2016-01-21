@@ -1,6 +1,6 @@
 package models;
 
-import java.io.Serializable;
+
 import java.util.ArrayList;
 
 /**
@@ -8,22 +8,22 @@ import java.util.ArrayList;
  *
  * Deck Class that uses the Card class to maintain a sinlge unique deck.
  */
-public class Deck implements {
+public class Deck {
     private ArrayList<Card> deckList;
-/* Creating a deckList that holds the array of cards*/
+    /* Creating a deckList that holds the array of cards*/
     public Deck() {
         deckList = new ArrayList<>();
     }
-/* Grab the cards from array*/
+    /* Grab the cards from array*/
     public ArrayList<Card> getCards(){
         return deckList;
     }
-/* Adds a card to the array of cards*/
+    /* Adds a card to the array of cards*/
     public void addCard(Card next_card){
+        //Checking that the card is unique NYI
         deckList.add(next_card);
+
     }
-
-
 
 
 }
