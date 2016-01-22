@@ -27,9 +27,9 @@ public class Routes implements ApplicationRoutes {
     @Override
     public void init(Router router) {  
         
-        router.GET().route("/").with(ApplicationController.class, "index");
+//        router.GET().route("/").with(ApplicationController.class, "index");
 //        router.GET().route("/hello_world.json").with(ApplicationController.class, "helloWorldJson");
-        router.GET().route("/AcesUp").with(ApplicationController.class, "acesUp");
+        router.GET().route("/").with(ApplicationController.class, "acesUp");
 
 
         ///////////////////////////////////////////////////////////////////////
