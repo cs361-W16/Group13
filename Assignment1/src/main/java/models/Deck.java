@@ -13,19 +13,7 @@ public class Deck {
     public Card cards[];
     public int count;
 
-    public ArrayList<Card> deckList;
-    /* Creating a deckList that holds the array of cards*/
 
-    /* Grab the cards from array*/
-    public ArrayList<Card> getCards(){
-        return deckList;
-    }
-    /* Adds a card to the array of cards*/
-    public void addCard(Card the_card){
-        //Checking that the card is unique NYI
-        deckList.add(the_card);
-
-    }
 
     Deck() {
         cards = new Card[NUM_SIZE];
