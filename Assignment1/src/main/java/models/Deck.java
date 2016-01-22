@@ -13,7 +13,7 @@ public class Deck {
     public Card cards[];
     public int count;
 
-    private ArrayList<Card> deckList;
+    public ArrayList<Card> deckList;
     /* Creating a deckList that holds the array of cards*/
 
     /* Grab the cards from array*/
@@ -21,9 +21,9 @@ public class Deck {
         return deckList;
     }
     /* Adds a card to the array of cards*/
-    public void addCard(Card next_card){
+    public void addCard(Card the_card){
         //Checking that the card is unique NYI
-        deckList.add(next_card);
+        deckList.add(the_card);
 
     }
 
@@ -38,6 +38,7 @@ public class Deck {
 
             }
         }
+        count--;
     }
 
     public int getCount() {
@@ -47,12 +48,11 @@ public class Deck {
         return cards[c].toString();
     }
 
-
     public Card Deal(){
-        Card topcard = cards[count];
+        Card top_card = cards[count];
         cards[count] = null;
         count--;
-        return topcard;
+        return top_card;
     }
 
 
