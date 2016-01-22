@@ -10,7 +10,13 @@ public class testDeck{
     //Testing that the deck has a full 52 cards
     public void testdeckEmpty(){
         Deck bob = new Deck();
+        int expect_deck_count = 51;
+        int received_deck_count;
+        received_deck_count = bob.getCount();
+        assertEquals(52,bob.cards.length);
+        assertEquals(expect_deck_count,received_deck_count);
         assertEquals("AD", bob.getCard(51));
+
     }
 
     /*@Test
