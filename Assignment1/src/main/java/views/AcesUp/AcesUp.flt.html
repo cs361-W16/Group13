@@ -137,6 +137,90 @@ $("#removeButton").click(function()
     }
 });
 
+
+
+
+$("#moveButton").click(function()
+{
+    var mfrom = $("#moveFrom").val();
+    var mto = $("#moveTo").val();
+
+    if(mfrom == "1")
+    {
+        if(mto == "2")
+        {
+            $("#c1_"+(--c1Num)).text("");
+            $("#c2_"+c2Num++).text("filler2");
+        }
+        else if(mto == "3")
+        {
+            $("#c1_"+(--c1Num)).text("");
+            $("#c3_"+c3Num++).text("filler3");
+        }
+        else if(mto == "4")
+        {
+            $("#c1_"+(--c1Num)).text("");
+            $("#c4_"+c4Num++).text("filler4");
+        }
+    }
+    else if(mfrom == "2")
+    {
+        if(mto == "1")
+        {
+            $("#c2_"+(--c2Num)).text("");
+            $("#c1_"+c1Num++).text("filler1");
+        }
+        else if(mto == "3")
+        {
+            $("#c2_"+(--c2Num)).text("");
+            $("#c3_"+c3Num++).text("filler3");
+        }
+        else if(mto == "4")
+        {
+            $("#c2_"+(--c2Num)).text("");
+            $("#c4_"+c4Num++).text("filler4");
+        }
+    }
+    else if(mfrom == "3")
+    {
+        if(mto == "1")
+        {
+            $("#c3_"+(--c3Num)).text("");
+            $("#c1_"+c1Num++).text("filler1");
+        }
+        else if(mto == "2")
+        {
+            $("#c3_"+(--c3Num)).text("");
+            $("#c2_"+c2Num++).text("filler2");
+        }
+        else if(mto == "4")
+        {
+            $("#c3_"+(--c3Num)).text("");
+            $("#c4_"+c4Num++).text("filler4");
+        }
+    }
+    else if(mfrom == "4")
+    {
+        if(mto == "1")
+        {
+            $("#c4_"+(--c4Num)).text("");
+            $("#c1_"+c1Num++).text("filler1");
+        }
+        else if(mto == "2")
+        {
+            $("#c4_"+(--c4Num)).text("");
+            $("#c2_"+c2Num++).text("filler2");
+        }
+        else if(mto == "3")
+        {
+            $("#c4_"+(--c4Num)).text("");
+            $("#c3_"+c3Num++).text("filler3");
+        }
+    }
+
+
+});
+
 </script>
 </body>
 </html>
