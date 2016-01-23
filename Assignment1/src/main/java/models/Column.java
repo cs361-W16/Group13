@@ -84,7 +84,6 @@ public class Column {
                 return true;
             }
             if(find == 0){
-                System.out.print("You can't discard this card");
                 return false;
             }
                 break;
@@ -100,7 +99,6 @@ public class Column {
                     return true;
                 }
                 if(find == 0){
-                    System.out.print("You can't discard this card");
                     return false;
                 }
                 break;
@@ -116,7 +114,6 @@ public class Column {
                     return true;
                 }
                 if(find == 0){
-                    System.out.print("You can't discard this card");
                     return false;
                 }
                 break;
@@ -132,7 +129,6 @@ public class Column {
                     return true;
                 }
                 if(find == 0){
-                    System.out.print("You can't discard this card");
                     return false;
                 }
                 break;
@@ -143,19 +139,17 @@ public class Column {
 
     public boolean moveCard(int colfrom, int colto){ //colfrom, colto input by users
         if (colfrom == colto){
-            System.out.print("You need to input different columns");
             return false;
         }
         else if (colfrom != colto){
             switch (colto){
                 case 1:
                     if(!columnone.isEmpty()){
-                        System.out.print("This column is not empty");
+                        return false;
                     }
                     else if (columnone.isEmpty()){
                         if (colfrom == 2){ //move columntwo topcard to columnone
                             if (columntwo.isEmpty() || columntwo.size() == 1){
-                                System.out.print("You can't move cards from this column");
                                 return false;
                             }
                             else {
@@ -170,7 +164,6 @@ public class Column {
 
                         if (colfrom == 3){ //move columnthree topcard to columnone
                             if (columnthree.isEmpty() || columnthree.size() == 1){
-                                System.out.print("You can't move cards from this column");
                                 return false;
                             }
                             else {
@@ -185,7 +178,6 @@ public class Column {
 
                         if (colfrom == 4){ //move columnfour topcard to columnone
                             if (columnfour.isEmpty() || columnfour.size() == 1){
-                                System.out.print("You can't move cards from this column");
                                 return false;
                             }
                             else {
@@ -202,12 +194,11 @@ public class Column {
 
                 case 2:
                     if(!columntwo.isEmpty()){
-                        System.out.print("This column is not empty");
+                        return false;
                     }
                     else if (columntwo.isEmpty()){
                         if (colfrom == 1){ //move columnone topcard to columntwo
                             if (columnone.isEmpty() || columnone.size() == 1){
-                                System.out.print("You can't move cards from this column");
                                 return false;
                             }
                             else {
@@ -222,7 +213,6 @@ public class Column {
 
                         if (colfrom == 3){ //move columnthree topcard to columntwo
                             if (columnthree.isEmpty() || columnthree.size() == 1){
-                                System.out.print("You can't move cards from this column");
                                 return false;
                             }
                             else {
@@ -237,7 +227,6 @@ public class Column {
 
                         if (colfrom == 4){ //move columnfour topcard to columntwo
                             if (columnfour.isEmpty() || columnfour.size() == 1){
-                                System.out.print("You can't move cards from this column");
                                 return false;
                             }
                             else {
@@ -254,12 +243,11 @@ public class Column {
 
                 case 3:
                     if(!columnthree.isEmpty()){
-                        System.out.print("This column is not empty");
+                        return false;
                     }
                     else if (columnthree.isEmpty()){
                         if (colfrom == 2){ //move columntwo topcard to columnthree
                             if (columntwo.isEmpty() || columntwo.size() == 1){
-                                System.out.print("You can't move cards from this column");
                                 return false;
                             }
                             else {
@@ -274,7 +262,6 @@ public class Column {
 
                         if (colfrom == 1){ //move columnone topcard to columnthree
                             if (columnone.isEmpty() || columnone.size() == 1){
-                                System.out.print("You can't move cards from this column");
                                 return false;
                             }
                             else {
@@ -289,7 +276,6 @@ public class Column {
 
                         if (colfrom == 4){ //move columnfour topcard to columnthree
                             if (columnfour.isEmpty() || columnfour.size() == 1){
-                                System.out.print("You can't move cards from this column");
                                 return false;
                             }
                             else {
@@ -306,12 +292,11 @@ public class Column {
 
                 case 4:
                     if(!columnfour.isEmpty()){
-                        System.out.print("This column is not empty");
+                        return false;
                     }
                     else if (columnfour.isEmpty()){
                         if (colfrom == 2){ //move columntwo topcard to columnfour
                             if (columntwo.isEmpty() || columntwo.size() == 1){
-                                System.out.print("You can't move cards from this column");
                                 return false;
                             }
                             else {
@@ -326,7 +311,6 @@ public class Column {
 
                         if (colfrom == 3){ //move columnthree topcard to columnfour
                             if (columnthree.isEmpty() || columnthree.size() == 1){
-                                System.out.print("You can't move cards from this column");
                                 return false;
                             }
                             else {
@@ -341,7 +325,6 @@ public class Column {
 
                         if (colfrom == 1){ //move columnone topcard to columnfour
                             if (columnone.isEmpty() || columnone.size() == 1){
-                                System.out.print("You can't move cards from this column");
                                 return false;
                             }
                             else {
