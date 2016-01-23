@@ -25,6 +25,9 @@ import org.doctester.testbrowser.Response;
 import org.hamcrest.CoreMatchers;
 import static org.hamcrest.CoreMatchers.containsString;
 import static org.junit.Assert.assertThat;
+import static org.junit.Assert.assertEquals;
+
+import ninja.NinjaTest;
 
 public class ApiControllerDocTesterTest extends NinjaDocTester {
     
