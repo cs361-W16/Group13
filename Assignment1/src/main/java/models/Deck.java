@@ -15,7 +15,7 @@ public class Deck {
 
 
 
-    Deck() {
+    public Deck() {
         cards = new Card[NUM_SIZE];
         count = 0;
         for(int i = 0; i < 13; ++i)
